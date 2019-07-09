@@ -3,7 +3,10 @@
         System Health
     </h2>
     <div calss="card-deck servers">
-        <app-server *ngFor="let server of servers" style="float: left"></app-server>
+        <app-server
+        *ngFor="let server of servers"
+        style="float: left"
+        [serverInput]="server"></app-server>
         <div style="clear: left"></div>
     </div>
 </div>
