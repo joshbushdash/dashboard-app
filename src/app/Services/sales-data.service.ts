@@ -14,7 +14,7 @@ export class SalesDataService {
   }
 
   getOrdersByCustomer(n: number) {
-    return this._http.get('http://localhost:5000/api/order/bycustomer' + n);
+    return this._http.get('http://localhost:5000/api/order/bycustomer/' + n);
   }
 
   getOrdersBuState() {
